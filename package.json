@@ -1,0 +1,21 @@
+{
+  "name": "hiroshi-yoshida.jp",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ykob/hiroshi-yoshida.jp.git"
+  },
+  "private": true,
+  "scripts": {
+    "start": "gulp"
+  },
+  "author": "yoichi kobayashi",
+  "license": "MIT",
+  "projectConfig": {
+    "PATH": "",
+    "DST": "dst",
+    "SRC": "src"
+  }
+}
