@@ -6,6 +6,7 @@
     $args = array(
       'labels' => $labels,
       'public' => true,
+      'has_archive' => true,
       'menu_position' => 5,
       'supports' => array('title', 'editor', 'thumbnail')
     );
