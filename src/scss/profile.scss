@@ -1,2 +1,30 @@
 @charset "utf-8";
 
+.japanese {
+  width: 47%;
+  float: left;
+}
+.english {
+  width: 47%;
+  float: right;
+}
+.profile-header {
+  font-family: $font-en;
+}
+.profile-section {
+  overflow: hidden;
+  margin-bottom: 50px;
+}
+.exhibition-header {
+  font-family: $font-en;
+}
+.exhibition-section {
+  overflow: hidden;
+}
+.exhibition-section {
+  dl {
+    dt {
+      margin-top: 1em;
+    }
+  }
+}
