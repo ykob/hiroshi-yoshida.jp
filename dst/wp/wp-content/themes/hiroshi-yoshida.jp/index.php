@@ -19,7 +19,7 @@
     <meta property="og:image" content="<?php echo $path; ?>/img/ogp.png">
     
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:creator" content="@ykob0123">
+    <meta name="twitter:creator" content="@yoshidahiroshi8">
     <meta name="twitter:title" content="<?php echo $website_title; ?>">
     <meta name="twitter:description" content="">
     <meta name="twitter:image" content="">

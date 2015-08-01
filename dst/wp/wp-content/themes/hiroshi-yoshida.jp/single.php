@@ -13,7 +13,7 @@
     <meta property="og:image" content="">
     
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:creator" content="@ykob0123">
+    <meta name="twitter:creator" content="@yoshidahiroshi8">
     <meta name="twitter:title" content="">
     <meta name="twitter:description" content="">
     <meta name="twitter:image" content="">
