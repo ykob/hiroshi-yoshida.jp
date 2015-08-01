@@ -1,0 +1,21 @@
+@charset "utf-8";
+
+.main-image {
+  margin-bottom: 100px;
+  text-align: center;
+}
+.blog-item {
+  margin-top: 80px;
+}
+.blog-post-date {
+  margin-bottom: 0.5em;
+  font-size: 2.5em;
+  font-style: italic;
+  font-family: $font-en;
+}
+.blog-item-title {
+  font-size: 1.2em;
+}
+.blog-body {
+  line-height: 1.75;
+}

@@ -1,0 +1,29 @@
+@charset "utf-8";
+
+.contact-form {
+  dt {
+    width: 10em;
+    clear: left;
+    float: left;
+  }
+  dd {
+    margin-bottom: 1em;
+    margin-left: 10em;
+  }
+  textarea {
+    width: 100%;
+  }
+}
+.submit {
+  text-align: center;
+  input {
+    padding: 0.5em 5em;
+    border: 0;
+    color: #fff;
+    background-color: #333;
+  }
+}
+.screen-reader-response {
+  margin: 2em 0;
+  color: #c00;
+}

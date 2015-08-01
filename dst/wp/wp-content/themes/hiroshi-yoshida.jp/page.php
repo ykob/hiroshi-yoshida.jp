@@ -3,6 +3,10 @@
   $url = get_bloginfo('url');
   $description = get_bloginfo('description');
   $path = get_bloginfo('stylesheet_directory');
+  
+  $post = get_post();
+  $post_title = $post->post_title;
+  $post_content = do_shortcode($post->post_content);
 ?>
 <!DOCTYPE html>
 <html>
@@ -12,7 +16,7 @@
     <meta name="description" content="<?php echo $website_title; ?>">
     <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
     
-    <meta property="og:title" content="<?php echo $website_title; ?>">
+    <meta property="og:title" content="<?php echo $page_title. ' | '. $website_title; ?>">
     <meta property="og:type" content="website">
     <meta property="og:description" content="<?php echo $description; ?>">
     <meta property="og:url" content="<?php echo $url; ?>">
@@ -37,37 +41,11 @@
 ?>
 
       <div class="contents">
-        <div class="main-image">
-          <img src="<?php echo $path; ?>/img/main.jpg" alt="">
-        </div>
-        
-<?php
-  $args = array(
-    'posts_per_page' => 5,
-    'post_type' => 'post'
-  );
-  $posts = get_posts($args);
-  foreach ($posts as $post) {
-    $post_title = $post->post_title;
-    $post_date = substr($post->post_date, 0, 10);
-    $post_content = wpautop($post->post_content);
-    $post_str = <<<EOT
-        <div class="blog-item">
-          <p class="blog-post-date">
-            $post_date
-          </p>
-          <h1 class="blog-item-title">
-            $post_title
-          </h1>
-          <div class="blog-body">
-            $post_content
-          </div>
-        </div>
-EOT;
-    echo $post_str;
-  };
-  wp_reset_postdata();
-?>
+        <h1 class="page-title">
+          <?php echo $post_title; ?>
+        </h1>
+
+        <?php echo $post_content; ?>
       </div>
     </div>
   </body>

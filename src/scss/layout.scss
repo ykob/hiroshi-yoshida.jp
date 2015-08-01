@@ -1,6 +1,7 @@
 @charset "utf-8";
 
 body {
+  min-width: 1020px;
   font-family: "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, sans-serif;
 }
 .global-header {
@@ -8,13 +9,20 @@ body {
   right: 0;
   bottom: 0;
   left: 0;
+  background-color: rgba(255, 255, 255, 1);
   a {
     color: #333;
+    text-decoration: none;
+    transition: 0.3s;
+    &:hover {
+      color: #afc27d;
+    }
   }
 }
 .global-header-inner {
-  width: 1020px;
+  width: 960px;
   height: 100px;
+  padding: 0 30px;
   position: relative;
   margin: 0 auto;
 }
@@ -23,20 +31,43 @@ body {
   position: absolute;
   top: 0;
   bottom: 0;
-  left: 0;
+  left: 30px;
   margin: auto 0;
+  font-size: 1.2em;
+  font-weight: bold;
+  font-family: $font-en;
 }
 .global-navi {
   height: 1em;
   position: absolute;
   top: 0;
-  right: 0;
+  right: 30px;
   bottom: 0;
   margin: auto 0;
+  font-size: 1.2em;
+  font-family: $font-en;
+  font-weight: bold;
   li {
     float: left;
     list-style-type: none;
     margin: 0 0 0 4em;
     padding: 0;
   }
+}
+.contents {
+  width: 960px;
+  margin: 0 auto;
+  padding: 50px 30px 120px;
+  a {
+    color: #afc27d;
+    transition: 0.3s;
+    &:hover {
+      text-decoration: none;
+    }
+  }
+}
+.page-title {
+  font-size: 3em;
+  font-style: italic;
+  font-family: $font-en;
 }

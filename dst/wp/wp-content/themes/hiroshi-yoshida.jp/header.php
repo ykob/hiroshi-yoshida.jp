@@ -1,22 +1,22 @@
         <div class="global-header">
           <div class="global-header-inner">
-            <div class="website-title">
+            <h1 class="website-title">
               <a href="/">
                 Yoshida Hiroshi 吉田博
               </a>
-            </div>
+            </h1>
             <ul class="global-navi">
               <li>
-                <a href="">profile</a>
+                <a href="/wp/profile/">profile</a>
               </li>
               <li>
-                <a href="">gallery</a>
+                <a href="/wp/gallery/">gallery</a>
               </li>
               <li>
-                <a href="">IMAGO</a>
+                <a href="/wp/imago/">IMAGO</a>
               </li>
               <li>
-                <a href="">contact</a>
+                <a href="/wp/contact/">contact</a>
               </li>
             </ul>
           </div>
