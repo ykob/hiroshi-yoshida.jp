@@ -6,17 +6,21 @@
   
   $post = get_post();
   $post_title = $post->post_title;
-  $post_content = do_shortcode($post->post_content);
+  if ($post_title == 'contact') {
+    $post_content = do_shortcode($post->post_content);
+  } else {
+    $post_content = wpautop($post->post_content);
+  }
 ?>
 <!DOCTYPE html>
 <html>
   <head>
-    <title><?php echo $website_title; ?></title>
+    <title><?php echo $post_title. ' | '. $website_title; ?></title>
     <meta name="keywords" content="">
     <meta name="description" content="<?php echo $website_title; ?>">
     <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
     
-    <meta property="og:title" content="<?php echo $page_title. ' | '. $website_title; ?>">
+    <meta property="og:title" content="<?php echo $post_title. ' | '. $website_title; ?>">
     <meta property="og:type" content="website">
     <meta property="og:description" content="<?php echo $description; ?>">
     <meta property="og:url" content="<?php echo $url; ?>">

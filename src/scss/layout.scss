@@ -27,7 +27,7 @@ body {
   margin: 0 auto;
 }
 .website-title {
-  height: 1em;
+  height: 40px;
   position: absolute;
   top: 0;
   bottom: 0;
@@ -58,6 +58,9 @@ body {
   width: 960px;
   margin: 0 auto;
   padding: 50px 30px 120px;
+  h2, h3, h4 {
+    font-family: $font-en;
+  }
   a {
     color: #afc27d;
     transition: 0.3s;
