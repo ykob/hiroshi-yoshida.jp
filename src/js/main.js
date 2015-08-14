@@ -14,19 +14,20 @@ var overlayOff = function() {
   $('#imagelightbox-overlay' ).remove();
 };
 
+var imageLightboxObj = {
+  onStart: function() {
+    overlayOn();
+  },
+  onEnd: function() {
+    overlayOff(); activityIndicatorOff();
+  },
+  onLoadStart: function() {
+    activityIndicatorOn();
+  },
+  onLoadEnd: function() {
+    activityIndicatorOff();
+  }
+};
 
-  $('.gallery-thumbs a').imageLightbox({
-    onStart: function() {
-      overlayOn();
-    },
-    onEnd: function() {
-      overlayOff(); activityIndicatorOff();
-    },
-    onLoadStart: function() {
-      activityIndicatorOn();
-    },
-    onLoadEnd: function() {
-      activityIndicatorOff();
-    }
-  });
+$('.gallery-thumbs a').imageLightbox(imageLightboxObj);
 

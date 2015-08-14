@@ -36,42 +36,80 @@
         <h1 class="page-title">
           gallery
         </h1>
-      </div>
       
-      <div class="gallery-wrap">
-        <ul class="gallery-thumbs">
-          <li>
-            <a href="<?php echo $path; ?>/img/gallery-img001.jpg" data-imagelightbox="gallery-001">
-              <img src="<?php echo $path; ?>/img/gallery-thumb001.png" alt="">
-            </a>
-          </li>
-          <li>
-            <a href="<?php echo $path; ?>/img/gallery-img002.jpg" data-imagelightbox="gallery-001">
-              <img src="<?php echo $path; ?>/img/gallery-thumb002.png" alt="">
-            </a>
-          </li>
-        </ul>
-        <div class="gallery-summary">
-          <p></p>
+        <div class="gallery-wrap">
+          <h2 class="gallery-title">
+            作品名が入ります。作品名が入ります。
+          </h2>
+          <ul class="gallery-thumbs">
+            <li>
+              <a href="<?php echo $path; ?>/img/gallery-img001.jpg">
+                <img src="<?php echo $path; ?>/img/gallery-thumb001.png" alt="">
+              </a>
+            </li>
+            <li>
+              <a href="<?php echo $path; ?>/img/gallery-img002.jpg">
+                <img src="<?php echo $path; ?>/img/gallery-thumb002.png" alt="">
+              </a>
+            </li>
+            <li>
+              <a href="<?php echo $path; ?>/img/gallery-img003.jpg">
+                <img src="<?php echo $path; ?>/img/gallery-thumb003.png" alt="">
+              </a>
+            </li>
+            <li>
+              <a href="<?php echo $path; ?>/img/gallery-img004.jpg">
+                <img src="<?php echo $path; ?>/img/gallery-thumb004.png" alt="">
+              </a>
+            </li>
+            <li>
+              <a href="<?php echo $path; ?>/img/gallery-img001.jpg">
+                <img src="<?php echo $path; ?>/img/gallery-thumb001.png" alt="">
+              </a>
+            </li>
+            <li>
+              <a href="<?php echo $path; ?>/img/gallery-img002.jpg">
+                <img src="<?php echo $path; ?>/img/gallery-thumb002.png" alt="">
+              </a>
+            </li>
+            <li>
+              <a href="<?php echo $path; ?>/img/gallery-img003.jpg">
+                <img src="<?php echo $path; ?>/img/gallery-thumb003.png" alt="">
+              </a>
+            </li>
+            <li>
+              <a href="<?php echo $path; ?>/img/gallery-img004.jpg">
+                <img src="<?php echo $path; ?>/img/gallery-thumb004.png" alt="">
+              </a>
+            </li>
+            <li>
+              <a href="<?php echo $path; ?>/img/gallery-img001.jpg">
+                <img src="<?php echo $path; ?>/img/gallery-thumb001.png" alt="">
+              </a>
+            </li>
+            <li>
+              <a href="<?php echo $path; ?>/img/gallery-img002.jpg">
+                <img src="<?php echo $path; ?>/img/gallery-thumb002.png" alt="">
+              </a>
+            </li>
+            <li>
+              <a href="<?php echo $path; ?>/img/gallery-img003.jpg">
+                <img src="<?php echo $path; ?>/img/gallery-thumb003.png" alt="">
+              </a>
+            </li>
+            <li>
+              <a href="<?php echo $path; ?>/img/gallery-img004.jpg">
+                <img src="<?php echo $path; ?>/img/gallery-thumb004.png" alt="">
+              </a>
+            </li>
+          </ul>
+          <div class="gallery-summary">
+            <p>作品の説明が入ります。作品の説明が入ります。作品の説明が入ります。作品の説明が入ります。作品の説明が入ります。作品の説明が入ります。作品の説明が入ります。作品の説明が入ります。作品の説明が入ります。</p>
+            <p>作品の説明が入ります。作品の説明が入ります。作品の説明が入ります。作品の説明が入ります。作品の説明が入ります。作品の説明が入ります。作品の説明が入ります。作品の説明が入ります。作品の説明が入ります。</p>
+          </div>
         </div>
-      </div>
-      
-      <div class="gallery-wrap">
-        <ul class="gallery-thumbs">
-          <li>
-            <a href="<?php echo $path; ?>/img/gallery-img003.jpg" data-imagelightbox="gallery-001">
-              <img src="<?php echo $path; ?>/img/gallery-thumb003.png" alt="">
-            </a>
-          </li>
-          <li>
-            <a href="<?php echo $path; ?>/img/gallery-img004.jpg" data-imagelightbox="gallery-001">
-              <img src="<?php echo $path; ?>/img/gallery-thumb004.png" alt="">
-            </a>
-          </li>
-        </ul>
-        <div class="gallery-summary">
-          <p></p>
-        </div>
+        
+        
       </div>
 <?php
   include 'header.php';
