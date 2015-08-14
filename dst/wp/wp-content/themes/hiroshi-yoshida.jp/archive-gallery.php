@@ -7,7 +7,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title><?php echo $website_title; ?></title>
+    <title>gallery | <?php echo $website_title; ?></title>
     <meta name="keywords" content="">
     <meta name="description" content="<?php echo $website_title; ?>">
     <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
@@ -38,9 +38,47 @@
         </h1>
       </div>
       
+      <div class="gallery-wrap">
+        <ul class="gallery-thumbs">
+          <li>
+            <a href="<?php echo $path; ?>/img/gallery-img001.jpg" data-imagelightbox="gallery-001">
+              <img src="<?php echo $path; ?>/img/gallery-thumb001.png" alt="">
+            </a>
+          </li>
+          <li>
+            <a href="<?php echo $path; ?>/img/gallery-img002.jpg" data-imagelightbox="gallery-001">
+              <img src="<?php echo $path; ?>/img/gallery-thumb002.png" alt="">
+            </a>
+          </li>
+        </ul>
+        <div class="gallery-summary">
+          <p></p>
+        </div>
+      </div>
+      
+      <div class="gallery-wrap">
+        <ul class="gallery-thumbs">
+          <li>
+            <a href="<?php echo $path; ?>/img/gallery-img003.jpg" data-imagelightbox="gallery-001">
+              <img src="<?php echo $path; ?>/img/gallery-thumb003.png" alt="">
+            </a>
+          </li>
+          <li>
+            <a href="<?php echo $path; ?>/img/gallery-img004.jpg" data-imagelightbox="gallery-001">
+              <img src="<?php echo $path; ?>/img/gallery-thumb004.png" alt="">
+            </a>
+          </li>
+        </ul>
+        <div class="gallery-summary">
+          <p></p>
+        </div>
+      </div>
 <?php
   include 'header.php';
 ?>
     </div>
+    <script src="<?php echo $path; ?>/js/lib/jquery-2.1.4.min.js"></script>
+    <script src="<?php echo $path; ?>/js/lib/imagelightbox.js"></script>
+    <script src="<?php echo $path; ?>/js/main.js"></script>
   </body>
 </html>
