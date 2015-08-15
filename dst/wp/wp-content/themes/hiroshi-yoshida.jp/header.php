@@ -2,9 +2,12 @@
           <div class="global-header-inner">
             <h1 class="website-title">
               <a href="/">
-                <img src="<?php echo $path; ?>/img/title.png" height="40" width="205" alt="Yoshida Hiroshi 吉田博">
+                <img src="<?php echo $path; ?>/img/title.png" alt="Yoshida Hiroshi 吉田博">
               </a>
             </h1>
+            <div class="global-navi-toggle">
+              <div class="global-navi-toggle-inner"><span></span></div>
+            </div>
             <ul class="global-navi">
               <li>
                 <a href="/wp/profile/">profile</a>

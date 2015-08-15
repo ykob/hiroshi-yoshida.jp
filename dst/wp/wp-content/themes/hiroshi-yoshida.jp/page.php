@@ -52,5 +52,9 @@
         <?php echo $post_content; ?>
       </div>
     </div>
+    
+<?php
+  include 'script.php';
+?>
   </body>
 </html>

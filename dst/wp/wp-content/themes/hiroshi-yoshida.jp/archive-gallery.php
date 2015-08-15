@@ -32,6 +32,10 @@
   </head>
   <body>
     <div class="page">
+<?php
+  include 'header.php';
+?>
+
       <div class="contents">
         <h1 class="page-title">
           gallery
@@ -81,12 +85,10 @@ EOT;
   echo $str;
 ?>
       </div>
-<?php
-  include 'header.php';
-?>
     </div>
-    <script src="<?php echo $path; ?>/js/lib/jquery-2.1.4.min.js"></script>
-    <script src="<?php echo $path; ?>/js/lib/imagelightbox.js"></script>
-    <script src="<?php echo $path; ?>/js/main.js"></script>
+
+<?php
+  include 'script.php';
+?>
   </body>
 </html>

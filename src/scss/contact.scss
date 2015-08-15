@@ -2,16 +2,43 @@
 
 .contact-form {
   dt {
-    width: 10em;
-    clear: left;
-    float: left;
+    margin-bottom: 0.5em;
   }
   dd {
-    margin-bottom: 1em;
-    margin-left: 10em;
+    margin: 0 0 1em;
+  }
+  input[type="text"],
+  input[type="email"]{
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0.3em;
+    font-size: 1.2em;
   }
   textarea {
     width: 100%;
+    box-sizing: border-box;
+    padding: 0.3em;
+    font-size: 1.2em;
+  }
+  @media #{$tablet} {
+    dt {
+      width: 10em;
+      clear: left;
+      float: left;
+    }
+    dd {
+      margin-left: 10em;
+    }
+    input[type="text"],
+    input[type="email"]{
+      width: auto;
+      padding: 0.1em;
+      font-size: 1em;
+    }
+    textarea {
+      padding: 0.1em;
+      font-size: 1em;
+    }
   }
 }
 .submit {

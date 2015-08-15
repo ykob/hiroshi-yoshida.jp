@@ -26,10 +26,12 @@
   </head>
   <body>
     <div class="page">
-      
-      
 <?php
   include 'header.php';
+?>
+
+<?php
+  include 'script.php';
 ?>
     </div>
   </body>
