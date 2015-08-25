@@ -50,26 +50,35 @@
   $categories = get_categories($cat_args);
   foreach($categories as $category) {
     $cat_title = $category->name;
+    $cat_slug = $category->slug;
     $cat_summary = $category->category_description;
     $str .= <<<EOT
-        <div class="gallery-wrap">
+        <div class="gallery-wrap" id="$cat_slug">
           <h2 class="gallery-title">
             $cat_title
           </h2>
           <ul class="gallery-thumbs">
 EOT;
     $args = array(
-        'taxonomy' => $category->name,
-        'post_type' => 'gallery'
+        'post_type' => 'gallery',
+        'gallery-group' => $cat_slug,
+        'numberposts' => -1
     );
     $posts = get_posts($args);
-    //var_dump($posts);
     global $post;
     if ($posts) {
       foreach ($posts as $post) {
         setup_postdata($post);
+        $files = get_post_meta($post->ID, '_thumbnail_id', true);
+        $file = wp_get_attachment_url($files);
+        $image_src = clean_url($file);
+        $thumbnail = get_the_post_thumbnail();
         $str .= <<<EOT
-            <li><a href=""><img src="" alt=""></a></li>
+            <li>
+              <a href="$image_src">
+                $thumbnail
+              </a>
+            </li>
 EOT;
       }
     }
@@ -89,6 +98,53 @@ EOT;
 
 <?php
   include 'script.php';
+  $script_str = '';
+  $script_str .= <<<EOT
+    <script>
+      var activityIndicatorOn = function() {
+        $('<div id="imagelightbox-loading"><div></div></div>').appendTo('body');
+      };
+
+      var activityIndicatorOff = function() {
+        $('#imagelightbox-loading' ).remove();
+      };
+
+      var overlayOn = function() {
+        $('<div id="imagelightbox-overlay"></div>').appendTo('body');
+      };
+
+      var overlayOff = function() {
+        $('#imagelightbox-overlay' ).remove();
+      };
+
+      var imageLightboxObj = {
+        onStart: function() {
+          overlayOn();
+        },
+        onEnd: function() {
+          overlayOff(); activityIndicatorOff();
+        },
+        onLoadStart: function() {
+          activityIndicatorOn();
+        },
+        onLoadEnd: function() {
+          activityIndicatorOff();
+        }
+      };
+
+EOT;
+  foreach($categories as $category) {
+    $cat_slug = $category->slug;
+    $script_str .= <<<EOT
+      $("#$cat_slug a").imageLightbox(imageLightboxObj);
+
+EOT;
+  }
+  $script_str .= <<<EOT
+    </script>
+
+EOT;
+  echo $script_str;
 ?>
   </body>
 </html>

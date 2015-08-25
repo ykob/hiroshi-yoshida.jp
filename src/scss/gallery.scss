@@ -8,20 +8,30 @@
 }
 .gallery-thumbs {
   overflow: hidden;
-  margin-right: -12px;
+  margin-right: -5px;
+  margin-left: -5px;
   padding: 0;
   li {
-    width: 150px;
+    width: 33.3%;
     float: left;
     list-style: none;
-    margin-right: 12px;
-    margin-bottom: 12px;
+    padding: 5px;
+    box-sizing: border-box;
     a {
       display: block;
     }
     img {
       width: 100%;
+      height: auto;
       vertical-align: top;
+    }
+  }
+  @media #{$tablet} {
+    margin-right: -12px;
+    li {
+      width: 150px;
+      margin-right: 12px;
+      margin-bottom: 12px;
     }
   }
 }
