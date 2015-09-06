@@ -1,2 +1,11 @@
 @charset "utf-8";
 
+.body__imago {
+  background-image: url('./img/back-imago.jpg');
+  background-repeat: repeat-y;
+  background-position: center top;
+  background-color: #111;
+  .page-title {
+    color: #fff;
+  }
+}

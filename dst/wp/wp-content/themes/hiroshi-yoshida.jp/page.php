@@ -6,6 +6,7 @@
   
   $post = get_post();
   $post_title = $post->post_title;
+  $post_name = $post->post_name;
   if ($post_title == 'contact') {
     $post_content = do_shortcode($post->post_content);
   } else {
@@ -38,7 +39,7 @@
     <link rel="stylesheet" href="<?php echo $path; ?>/style.css">
     <link rel="alternate" href="/feed/jstarted.xml" type="application/rss+xml" title="">
   </head>
-  <body>
+  <body class="body__<?php echo $post_name; ?>">
     <div class="page">
 <?php
   include 'header.php';
