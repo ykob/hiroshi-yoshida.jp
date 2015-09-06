@@ -46,7 +46,7 @@
 ?>
 
       <div class="contents">
-        <h1 class="page-title">
+        <h1 class="page-title page-title__<?php echo $post_name; ?>">
           <?php echo $post_title; ?>
         </h1>
 
@@ -56,6 +56,7 @@
     
 <?php
   include 'script.php';
+  echo post_custom('JavaScript');
 ?>
   </body>
 </html>

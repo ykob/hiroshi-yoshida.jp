@@ -5,7 +5,49 @@
   background-repeat: repeat-y;
   background-position: center top;
   background-color: #111;
-  .page-title {
-    color: #fff;
+  background-size: 100% auto;
+  @media #{$tablet} {
+    background-size: 1229px auto;
   }
+}
+.page-title__imago {
+  margin-bottom: 30px;
+  color: #fff;
+  font-size: 3em;
+  text-align: center;
+  @media #{$tablet} {
+    font-size: 4em;
+  }
+}
+.imago-eyecatch {
+  max-width: 720px;
+  margin: 2em auto;
+  img {
+    width: 100%;
+  }
+}
+.imago-outline {
+  max-width: 720px;
+  box-sizing: border-box;
+  line-height: 1.75;
+  margin: 2em auto;
+  padding: 1.5em 2em;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+.imago-gallery {
+  margin: 4em 0;
+}
+.gallery-title__imago {
+  margin: 1.75em 0 0.75em;
+  color: #fff;
+  @media #{$tablet} {
+    font-size: 2.5em;
+  }
+}
+.imago-description {
+  line-height: 1.75;
+  padding: 1.5em 2em;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.8);
 }
