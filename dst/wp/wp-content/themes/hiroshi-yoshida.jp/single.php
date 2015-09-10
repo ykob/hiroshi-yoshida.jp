@@ -27,6 +27,7 @@
     <link rel="index" href="/">
     <link rel="shortcut icon" href="/img/favicon.ico">
     <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Josefin+Slab:400,300">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=IM+Fell+Great+Primer+SC">
     <link rel="stylesheet" href="<?php echo $path; ?>/style.css">
     <link rel="alternate" href="/feed/jstarted.xml" type="application/rss+xml" title="">
   </head>

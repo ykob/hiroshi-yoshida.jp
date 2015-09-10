@@ -15,7 +15,7 @@
               <li>
                 <a href="/wp/gallery/">gallery</a>
               </li>
-              <li>
+              <li class="gnavi__imago">
                 <a href="/wp/imago/">IMAGO</a>
               </li>
               <li>
