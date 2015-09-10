@@ -1,8 +1,14 @@
+<?php
+  $website_title = get_bloginfo('name');
+  $url = get_bloginfo('url');
+  $description = get_bloginfo('description');
+  $path = get_bloginfo('stylesheet_directory');
+?>
 <!DOCTYPE html>
 <html>
   <head>
     <title></title>
-    <meta name="keywords" content="">
+    <meta name="keywords" content="吉田博,yoshida hiroshi">
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
     
@@ -20,8 +26,8 @@
     
     <link rel="index" href="/">
     <link rel="shortcut icon" href="/img/favicon.ico">
-    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Montserrat Alternates:400,700">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Josefin+Slab:400,300">
+    <link rel="stylesheet" href="<?php echo $path; ?>/style.css">
     <link rel="alternate" href="/feed/jstarted.xml" type="application/rss+xml" title="">
   </head>
   <body>
