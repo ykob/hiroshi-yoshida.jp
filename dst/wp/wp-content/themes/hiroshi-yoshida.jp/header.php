@@ -10,19 +10,19 @@
             </div>
             <ul class="global-navi">
               <li>
-                <a href="/wp/profile/">profile</a>
+                <a href="/profile/">profile</a>
               </li>
               <li>
-                <a href="/wp/gallery/">gallery</a>
+                <a href="/gallery/">gallery</a>
               </li>
               <li class="gnavi__imago">
-                <a href="/wp/imago/">IMAGO</a>
+                <a href="/imago/">IMAGO</a>
               </li>
               <li>
                 <a href="https://yoshidahiroshi.stores.jp" target="_blank">shop</a>
               </li>
               <li>
-                <a href="/wp/contact/">contact</a>
+                <a href="/contact/">contact</a>
               </li>
             </ul>
           </div>
