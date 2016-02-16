@@ -16,7 +16,7 @@
                 <a href="/gallery/">gallery</a>
               </li>
               <li class="gnavi__imago">
-                <a href="/imago/">IMAGO</a>
+                <a href="/imago/" target="_blank">IMAGO</a>
               </li>
               <li>
                 <a href="https://yoshidahiroshi.stores.jp" target="_blank">shop</a>
@@ -27,4 +27,3 @@
             </ul>
           </div>
         </div>
-      
